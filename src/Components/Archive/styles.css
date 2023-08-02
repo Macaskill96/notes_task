@@ -1,0 +1,26 @@
+.archiveButton, .archiveNote, .archiveCategory, .archiveDate {
+    background: #a9acef;
+    height: 40px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+
+}
+.archive {
+    display: flex;
+}
+
+.archiveDate {
+    width: 150px;
+}
+.archiveNote {
+    width: 350px;
+}
+.archiveCategory {
+    width: 150px;
+}
+.archiveButton {
+    width: 150px;
+}

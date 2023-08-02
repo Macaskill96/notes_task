@@ -1,0 +1,8 @@
+.archiveContainer, .notesContainer, .countContainer{
+    width: 800px;
+}
+
+.notesContainer, .countContainer {
+    transition: height 0.5s ease;
+    margin-bottom: 10px;
+}

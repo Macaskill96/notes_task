@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+}
+
+.create, .note, .category, .dates, .forButton {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    background: #545454;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4)
+}
+
+.create1, .note1, .category1, .dates1, .forButton1 {
+    margin-bottom: 5px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create1 {
+    text-align: center;
+    width: 100px;
+    background: #a9acef;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+.note1 {
+    width: 300px;
+    background: #a9acef;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+    word-break: break-all;
+}
+.category1 {
+    text-align: center;
+    width: 100px;
+    background: #a9acef;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+.dates1 {
+    background: #a9acef;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+    width: 150px;
+}
+.forButton1 {
+    width: 150px;
+    background: #a9acef;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.create {
+    width: 100px;
+}
+.note{
+    width: 300px;
+}
+.category {
+    width: 100px;
+}
+.dates {
+    width: 150px;
+}
+.forButton {
+    width: 150px;
+}
+.button {
+    width: 50px;
+    height: 25px;
+    font-size: 10px;
+    margin-right: 2px;
+    border-radius: 0.3em;
+    border: 1px solid #aaaaaa;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+.button:hover {
+    box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.3), 0 2px 3px rgba(0, 0, 0, 0.4);
+}
