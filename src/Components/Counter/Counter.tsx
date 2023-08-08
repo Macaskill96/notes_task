@@ -10,25 +10,25 @@ const Counter = () => {
 
     return (
         <div>
-            <div className='headerCount'>
-                <div className='categoryHeader'>Category</div>
-                <div className='activeHeader'>Active notes</div>
-                <div className='archiveHeader'>Archived notes</div>
+            <div className='headerCount flex'>
+                <div className='categoryHeader w-300 h-40 flex items-center pl-1 bg-headerBg mt-5 mb-5 text-white'>Category</div>
+                <div className='activeHeader w-200 styleHeader'>Active notes</div>
+                <div className='archiveHeader w-300 styleHeader'>Archived notes</div>
             </div>
-            <div className='Task'>
-                <div className='noteCategory'>Task</div>
-                <div className='activeCount'>{countNotes.result.Task}</div>
-                <div className='archiveCount'>{arcCounts.result.Task}</div>
+            <div className='Task flex'>
+                <div className='noteCategory w-300 h-35 flex mb-3 bg-bgBlue pl-2 items-center'>Task</div>
+                <div className='activeCount w-200 styleNote'>{countNotes.result.Task}</div>
+                <div className='archiveCount w-300 styleNote'>{arcCounts.result.Task}</div>
             </div>
-            <div className='RandomThink'>
-                <div className='noteCategory'>Random</div>
-                <div className='activeCount'>{countNotes.result.RandomThought}</div>
-                <div className='archiveCount'>{arcCounts.result.RandomThought}</div>
+            <div className='RandomThink flex'>
+                <div className='noteCategory w-300 h-35 flex mb-3 bg-bgBlue pl-2 items-center'>Random</div>
+                <div className='activeCount w-200 styleNote'>{countNotes.result.RandomThought}</div>
+                <div className='archiveCount w-300 styleNote'>{arcCounts.result.RandomThought}</div>
             </div>
-            <div className='Idea'>
-                <div className='noteCategory'>Idea</div>
-                <div className='activeCount'>{countNotes.result.Idea}</div>
-                <div className='archiveCount'>{arcCounts.result.Idea}</div>
+            <div className='Idea flex'>
+                <div className='noteCategory w-300 h-35 flex mb-3 bg-bgBlue pl-2 items-center'>Idea</div>
+                <div className='activeCount w-200 styleNote'>{countNotes.result.Idea}</div>
+                <div className='archiveCount w-300 styleNote'>{arcCounts.result.Idea}</div>
             </div>
         </div>
     );

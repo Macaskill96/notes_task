@@ -100,24 +100,24 @@ const Notes: FC = () => {
     return (
         <div>
             <Category updateNote={updateNote} selectIndex={selectIndex} />
-            <div className='container'>
-                <div className='create'>Create</div>
-                <div className='note'>Note</div>
-                <div className='category'>Category</div>
-                <div className='dates'>Dates</div>
-                <div className='forButton'></div>
+            <div className='container flex'>
+                <div className='boxShadowStyle w-100 stylesForHeader'>Create</div>
+                <div className='boxShadowStyle w-300 stylesForHeader'>Note</div>
+                <div className='boxShadowStyle w-100 stylesForHeader'>Category</div>
+                <div className='boxShadowStyle w-150 stylesForHeader'>Dates</div>
+                <div className='boxShadowStyle w-150 stylesForHeader'></div>
             </div>
             {noteSelector.map((note, index) => (
-                        <div key={index} className='container'>
-                            <div className='create1'>{note.date}</div>
-                            <div className='note1'>{note.note}</div>
-                            <div className='category1'>{note.category}</div>
-                            <div className='dates1'>
+                        <div key={index} className='container flex'>
+                            <div className='boxShadowStyle w-100 stylesForNotes'>{note.date}</div>
+                            <div className='boxShadowStyle w-300 stylesForNotes'>{note.note}</div>
+                            <div className='boxShadowStyle w-100 stylesForNotes'>{note.category}</div>
+                            <div className='boxShadowStyle w-150 stylesForNotes'>
                                 {findDates(note.note).map((date, i) => (
                                     <span key={i}>{date.split(', ')}, </span>
                                 ))}
                             </div>
-                            <div className='forButton1'>
+                            <div className='boxShadowStyle w-150 stylesForNotes'>
                                 <button onClick={() => removeNote(index)} className='button'>Delete</button>
                                 <button onClick={()=> setNotes(index)} className='button'>Edit</button>
                                 <button onClick={()=> ToArchive(index)} className='button'>To Archive</button>

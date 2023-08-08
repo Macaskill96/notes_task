@@ -97,9 +97,9 @@ const Category:FC<CategoryProps> = ({updateNote, selectIndex}) => {
 
 
     return (
-        <div className='formContainer'>
+        <div className='flex flex-col items-center justify-center m-5 w-800'>
             <div >
-                <select onChange={(event) => setCategories(event.target.value)} className='categorySelect'>
+                <select onChange={(event) => setCategories(event.target.value)} className='categorySelect flex items-center h9 m-2 p-1.5 bg-white border'>
                     {category.map((c, index) => (
                         <option key={index} value={c}>
                             {c}
@@ -108,8 +108,8 @@ const Category:FC<CategoryProps> = ({updateNote, selectIndex}) => {
                 </select>
             </div>
             <div>
-                <form onSubmit={handleSubmit(changeFunction? changeNote:handleNoteCreation)} className='formContainer'>
-                    <input  placeholder='create note' {...register('note')} onChange={handleNoteChange} className='inputSelect'/>
+                <form onSubmit={handleSubmit(changeFunction? changeNote:handleNoteCreation)} className='flex flex-col items-center justify-center m-5 w-800'>
+                    <input  placeholder='create note' {...register('note')} onChange={handleNoteChange} className='inputSelect w-200 h-25 m-5 p-1.5 border border-gray-300 rounded-md'/>
                     <button type='submit' disabled={isButtonDisabled} className='buttonForm'>{changeFunction? 'Update':'Create'}</button>
                 </form>
             </div>

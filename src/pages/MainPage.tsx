@@ -7,7 +7,7 @@ import './styles.css'
 
 const MainPage = () => {
     return (
-        <div className='main'>
+        <div className='main flex justify-center items-center w-full h-full mt-50'>
             <div>
                 <NotesContainer/>
                 <CountContainer/>

@@ -79,11 +79,11 @@ const Archive = () => {
         <div>
             {archived.map((arc, index) => {
                 return (
-                    <div key={index} className='archive'>
-                        <div className='archiveDate'>{arc?.date}</div>
-                        <div className='archiveNote'>{arc?.note}</div>
-                        <div className='archiveCategory'>{arc?.category}</div>
-                        <div className='archiveButton'>
+                    <div key={index} className='archive flex'>
+                        <div className='archiveDate flex w-150 h-40 bg-bgBlue mb-2 justify-center items-center'>{arc?.date}</div>
+                        <div className='archiveNote flex w-350 h-40 bg-bgBlue mb-2 justify-center items-center'>{arc?.note}</div>
+                        <div className='archiveCategory flex w-150 h-40 bg-bgBlue mb-2 justify-center items-center'>{arc?.category}</div>
+                        <div className='archiveButton flex w-150 h-40 bg-bgBlue mb-2 justify-center items-center'>
                             <button onClick={() => removeNote(index, arc)} className='button'>UnZip</button>
                         </div>
                     </div>

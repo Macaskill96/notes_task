@@ -1,59 +1,21 @@
-.headerCount, .Idea, .Task, .RandomThink {
-    display: flex;
-}
 
 .noteCategory {
-    width: 300px;
-    background: #a9acef;
     box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
-    padding-left: 2px;
+
 }
 .activeCount {
-    width: 200px;
     box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
-    background: #a9acef;
 }
 .archiveCount {
-    width: 300px;
     box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
-    background: #a9acef;
-}
-
-.noteCategory, .activeCount, .archiveCount {
-    height: 35px;
-    margin-bottom: 3px;
-    display: flex;
-    align-items: center;
-}
-
-.activeCount, .archiveCount {
-    justify-content: center;
 }
 
 .categoryHeader, .activeHeader, .archiveHeader {
-    display: flex;
-    align-items: center;
-    padding-left: 1px;
-    background: #545454;
-    height: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: whitesmoke;
     box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
 }
-
-.categoryHeader {
-    width: 300px;
+.styleHeader {
+    @apply h-40 flex items-center pl-1 bg-headerBg mt-5 mb-5 text-white justify-center
 }
-
-.activeHeader {
-    display: flex;
-    justify-content: center;
-    width: 200px;
-}
-
-.archiveHeader {
-    display: flex;
-    justify-content: center;
-    width: 300px;
+.styleNote {
+    @apply h-35 flex mb-3 bg-bgBlue pl-2 justify-center items-center
 }
